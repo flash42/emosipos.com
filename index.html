@@ -6,20 +6,24 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <style>
         html {
-            background: url(img/bg.jpg) no-repeat center center fixed;
+            background: url(img/bg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
+            height: 100%;
+            width: 100%;
+            min-height: 100%;
+            min-width: 100%;
         }
         
         body {
             padding: 0px;
             margin: 0px;
+            min-height: 100%;
+            min-width: 100%;
         }
         
         .overlay {
-            background-color: rgba(150, 150, 150, 0.8);
             position: absolute;
             top: 0;
             left: 0;
@@ -31,24 +35,25 @@
             justify-content: center;
             -webkit-align-items: center;
             -webkit-justify-content: center;
+            background-color: rgba(128, 128, 128, 0.8);
         }
         
         .title {
             font-family: Tahoma, Geneva, sans-serif;
             font-weight: bold;
             font-size: 88px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             padding-left: 36px;
             padding-right: 36px;
+            display: block;
+            white-space: nowrap;
         }
     </style>
 </head>
 </head>
 
 <body>
-    <div class="background">
-        <div class="overlay"><strong class="title">under construction</strong></div>
-    </div>
+    <div class="overlay"><strong class="title">under construction</strong></div>
 </body>
 
 </html>
